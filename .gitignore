@@ -1,0 +1,16 @@
+x64
+vcpkg*
+*.vscode
+*.exe
+*vcxproj*
+CMakeCache.txt
+CMakeFiles
+CMakeUserPresets.json
+cmake_install.cmake
+GameOfLife.sln
+Testing
+*dir
+CTestTestfile.cmake
+Release
+Debug
+build/
