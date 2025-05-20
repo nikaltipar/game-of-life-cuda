@@ -6,7 +6,7 @@ A few simple implementations of Conway's Game of Life <sup>[1]</sup>, mostly usi
 ```mermaid
 classDiagram
     class GameOfLife {
-        <<interface>>
+        <<Abstract>>
         #width : uint32_t
         #height : uint32_t
         #seed : uint32_t
@@ -34,8 +34,8 @@ classDiagram
         +get_grid() std::vector~Tile~
     }
 
-    GameOfLife <|.. GameOfLifeDefault
-    GameOfLife <|.. GameOfLifeThrust
+    GameOfLife <|-- GameOfLifeDefault
+    GameOfLife <|-- GameOfLifeThrust
 ```
 
 The build has only been tested on windows using MSVC, but it shouldn't be that hard to set it up on other platforms, as well.
